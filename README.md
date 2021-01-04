@@ -21,7 +21,7 @@ So basically this script is made to automate the stuff of creating direct downlo
 
 ![5](https://user-images.githubusercontent.com/32637886/103547866-f4a8de00-4eca-11eb-8343-bcb5aaf48ea2.png)
 
-**4.) After it script will execute and spreadsheet will be created**
+**4.) After it the script will execute and spreadsheet will be created**
 
 ![6](https://user-images.githubusercontent.com/32637886/103547869-f5417480-4eca-11eb-95ab-a5ff57378a34.png)
 
