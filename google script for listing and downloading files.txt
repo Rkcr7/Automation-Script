@@ -1,0 +1,29 @@
+function myFunction123() {
+  var foldername = 'Enter the foldername here';
+  var folderlisting = '' + foldername;
+  
+  var folders = DriveApp.getFoldersByName(foldername)
+  var folder = folders.next();
+  var contents = folder.getFiles();
+  var contents = folder.getFiles();
+  
+  var ss = SpreadsheetApp.create(folderlisting);
+  var sheet = ss.getActiveSheet();
+  
+  
+  var file;
+  var name;
+  var view;
+  var row; 
+  var download;
+  var name1;
+  while(contents.hasNext()){
+    file = contents.next();
+    name = file.getName();
+    name1= name.replace(/\.[^/.]+$/, "")
+    view = file.getUrl();
+    download = view.replace(/\/file\/d\/(.+)\/(.+)/, "/uc?export=download&id=$1"); 
+    sheet.appendRow([name1, view,download]);
+  }
+  
+};
